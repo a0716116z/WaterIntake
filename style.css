@@ -1,0 +1,30 @@
+html, * {
+   margin:0; padding:0;
+  }
+body 
+{ overflow:hidden;
+  background: #7c7c7c;
+  position: relative;
+  height: 100vh;
+}
+canvas { 
+  background-color:linear-gradient(#3850d8, #55adcf,45deg)
+}
+h1 { 
+  margin:150px auto 50px auto; text-align:center;
+}
+.container { 
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  /* background: #fff ; */
+}
+div{
+  font-size: 2rem;
+  font-weight: bold;
+  color: azure;
+}
