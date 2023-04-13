@@ -35,6 +35,7 @@ function send_data(user, volume) {
       if(response == "成功"){
         alert("成功");
         send=true;
+        setInterval(auto_close, 1500);
       }
     },
   });
