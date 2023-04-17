@@ -1,7 +1,7 @@
 window.onload = function(){
   callwapp();
-  processUser()
-
+  processUser();
+  
 }
 let send=false;
 function processUser()
@@ -33,9 +33,14 @@ function send_data(user, volume) {
     },
     success: function(response) {
       if(response == "成功"){
-        alert("成功");
+        // alert("成功");
+        show_hide();
         send=true;
+        document.getElementById("status").innerHTML = '喝水成功...';
         setInterval(auto_close, 1500);
+      }
+      else{
+
       }
     },
   });
@@ -57,5 +62,10 @@ function callwapp(){
   
 });
 
+}
+function show_hide(){
+let dialog = document.getElementsByClassName('toast')[0];
+dialog.classList.remove('display');
+setTimeout(function() {dialog.classList.add('display')}, 1500);
 }
 

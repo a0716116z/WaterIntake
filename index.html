@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    /> -->
+    <title>Water Intake Experiment</title>
+
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
@@ -19,9 +25,23 @@
       <canvas class="waterwave-canvas"></canvas>
     </div>
     <div class="container">
-      <div>喝水中....</div>
+      <div id="status">紀錄喝水中....</div>
       <div id="user"></div>
       <div id="volume"></div>
+      <div class="notice">
+        如果紀錄成功之後未成功關閉頁面，請手動關閉頁面，以免造成資料錯誤。
+      </div>
+    </div>
+    <div
+      class="toast align-items-center"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="d-flex">
+        <div style="font-size: 1.5rem">紀錄喝水成功</div>
+        <div style="font-size: 0.8rem">即將關閉網頁</div>
+      </div>
     </div>
   </body>
 </html>
