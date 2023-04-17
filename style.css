@@ -51,6 +51,7 @@ div{
   color: #000;
   background: #424242;
   border-radius: 20px;
+  transition: .4s;
   /* background: #ffffff; */
 }
 
