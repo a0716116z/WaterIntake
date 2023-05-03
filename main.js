@@ -13,7 +13,7 @@ function processUser()
   temp = parameters[1].split("=");
   volume = unescape(temp[1]);
   document.getElementById("user").innerHTML = user;
-  document.getElementById("volume").innerHTML = volume+' ml';
+  // document.getElementById("volume").innerHTML = volume+' ml';
   if(send==false){
      send_data(user, volume);
   }
@@ -26,7 +26,7 @@ function auto_close(){
 
 function send_data(user, volume) {
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbyUWgNSHFRDs-Tl_m4CLugo2ghklyZryNCBV7VmgVad23dFYRA0TrUBTYTLDW55edtdHQ/exec",
+    url: "https://script.google.com/macros/s/AKfycbzdVq_B_1mb3L2Ro0m-_dUR0I65lOtSlUp5VGIt017ZgpvEXEl7_lWZ68ttNkxW8EE8yQ/exec",
     data: {
         "user": user,
         "volume": volume,
