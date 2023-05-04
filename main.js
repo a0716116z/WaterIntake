@@ -26,7 +26,7 @@ function auto_close(){
 
 function send_data(user, volume) {
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbzdVq_B_1mb3L2Ro0m-_dUR0I65lOtSlUp5VGIt017ZgpvEXEl7_lWZ68ttNkxW8EE8yQ/exec",
+    url: "https://script.google.com/macros/s/AKfycbzylxkjIb3zDbEzjCP2OsSZvpAvxbt0gfAgrEjv8NQrHpJbpLMdALBHEtbiSvHML7kV-w/exec",
     data: {
         "user": user,
         "volume": volume,
